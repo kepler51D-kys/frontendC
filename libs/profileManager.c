@@ -6,7 +6,7 @@
 verification getKeyPassword() {
     verification ret;
     
-    FILE *f = fopen("../assets/.cache/profile", "rb");
+    FILE *f = fopen("../assets/.programcache/profile", "rb");
     fseek(f, 0, SEEK_END);
     long fsize = ftell(f);
     fseek(f, 0, SEEK_SET);

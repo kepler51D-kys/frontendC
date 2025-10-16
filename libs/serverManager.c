@@ -15,7 +15,7 @@ Uint32 getServers(server *servers) {
 
 char line[512];
 Uint32 readCache(server *servers) {
-    FILE *file = fopen("../assets/.cache/servers","rb");
+    FILE *file = fopen("../assets/.programcache/servers","rb");
     Uint32 maxSize = 2;
     Uint32 size = 0;
     
