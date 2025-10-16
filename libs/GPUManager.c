@@ -12,7 +12,3 @@ bool gpuInit(SDL_GPUDevice **device, SDL_Window *window) {
     bool success = SDL_ClaimWindowForGPUDevice(*device, window);
     return success;
 }
-
-int getShader(const char* spvFile) {
-    
-}
