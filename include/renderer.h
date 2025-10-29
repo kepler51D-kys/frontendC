@@ -5,8 +5,6 @@
 #include "SDL3/SDL_video.h"
 #include "data.h"
 #include "panelInfo.h"
-#include "profileManager.h"
-#include "serverManager.h"
 #include <SDL3/SDL_gpu.h>
 #include <SDL3/SDL_stdinc.h>
 #include <SDL3_ttf/SDL_ttf.h>
@@ -15,9 +13,6 @@ typedef struct {
     SDL_Window *window;
     SDL_Renderer *renderer;
     TTF_Font *font;
-    verification info;
-    SDL_GPUDevice *device;
-    server *servers;
     Uint32 serverLen;
     channelPanelInfo channelPanelInfo;
 } session;

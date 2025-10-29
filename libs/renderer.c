@@ -8,7 +8,6 @@
 #include <SDL3_ttf/SDL_ttf.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include "GPUManager.h"
 
 Uint8 maxFPS = 60;
 
@@ -20,12 +19,6 @@ int allInit(SDL_Window** window, SDL_Renderer** renderer, TTF_Font** font, SDL_G
         SDL_Log("Couldn't create window and renderer: %s\n", SDL_GetError());
         return 1;
     }
-    // if (!gpuInit(device, *window)) {
-    //     printf("gpu init failed\n");
-    //     printf("%s\n",SDL_GetError());
-    //     SDL_Quit();
-    //     return 1;
-    // }
     
     if (!TTF_Init()) {
         printf("ttf init failed\n");
