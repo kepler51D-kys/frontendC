@@ -53,20 +53,6 @@ SDL_Texture* getImg(SDL_Renderer* renderer, char* name) {
     }
     return texture;
 }
-void redraw(session* state) {
-    SDL_SetRenderDrawColor(state->renderer, 100, 80, 100, 255);
-    SDL_RenderClear(state->renderer);
-    
-    vec2 size = getScreenSize(state->window);
-    DrawMessagePanel(size,state->renderer);
-    DrawChannelPanel(state, size,state->renderer);
-    DrawTextPanel(size,state->renderer);
-    DrawSettingsPanel(size,state->renderer);
-    DrawAdditionPanel(size, state->renderer);
-
-    SDL_RenderPresent(state->renderer);
-    SDL_Delay(1000/maxFPS);
-}
 Uint32 deltaTimeMS() {
     return SDL_GetTicks() - time;
 }

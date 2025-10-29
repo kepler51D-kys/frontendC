@@ -23,11 +23,11 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv) {
         return SDL_APP_FAILURE;
     }
     SDL_SetWindowMinimumSize(state->window, windowMinSize.x, windowMinSize.y);
-    redraw(state);
     return SDL_APP_CONTINUE;
 }
 
 SDL_AppResult SDL_AppIterate(void *appstate) {
+    // render opengl
     return SDL_APP_CONTINUE;
 }
 
