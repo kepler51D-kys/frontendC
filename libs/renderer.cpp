@@ -73,5 +73,5 @@ Uint32 deltaTimeMS() {
 vec2 getScreenSize(SDL_Window* window) {
     int x,y;
     SDL_GetWindowSize(window, &x, &y);
-    return Vec2(x,y);
+    return Vec2((float)x,(float)y);
 }

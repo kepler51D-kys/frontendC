@@ -38,11 +38,11 @@ if(NOT SDL3_TTF_LIBRARIES)
 endif()
 
 set(SOURCES
-    src/main.c
-    libs/renderer.c
-    libs/sockets.c
-    libs/data.c
-    libs/stringType.c
+    src/main.cpp
+    libs/renderer.cpp
+    libs/sockets.cpp
+    libs/data.cpp
+    libs/stringType.cpp
 )
 
 add_executable(client ${SOURCES})

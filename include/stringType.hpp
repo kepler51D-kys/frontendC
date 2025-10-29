@@ -1,7 +1,6 @@
 #ifndef STRINGTYPE_H
 #define STRINGTYPE_H
 #include <sys/types.h>
-#include <uchar.h>
 #include <SDL3/SDL_stdinc.h>
 
 typedef struct {
